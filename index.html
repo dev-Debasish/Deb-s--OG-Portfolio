@@ -4,130 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deb-Folio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>deb's Portfolio</title>
+    <!-- boxicons -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background-color: rgb(0, 0, 33);
-        color: white;
-        font-family: 'Poppins', sans-serif;
-      }
-
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 70px;
-        background-color: rgb(20, 20, 73);
-      }
-
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        font-size: 1.1rem;
-        color: rgb(216, 244, 7);
-      }
-
-      .left{
-        font-size: 1.5rem;
-      }
-
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        margin: 80px 0;
-        align-items: center;
-      }
-
-      .firstSection > div {
-        width: 30%;
-      }
-
-      .leftSection{
-        font-size: 2.3rem;
-      }
-
-      .rightSection {
-        background: none;
-      }
-
-      .rightSection img {
-        width: 80%;
-        background: none;
-      }
-
-      .purple {
-        color: rgb(183, 111, 250);
-      }
-
-      #element {
-        color: rgb(16, 238, 109);
-      }
-    </style>
-
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <>
+  <body>
+   
+    <!-- header -->
     <header>
-      <nav>
-        <div class="left">Deb's Portfolio</div>
-        <div class="right">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
-            </ul>
-        </div>
-      </nav>
+        <a href="#" class="logo">Debasish,</a>
+
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Resume</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
-    <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My name is <span class="purple">Debasish</span>.
-                <div>And passionate about</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightSection">
-                <img src="bg_transparent.png" alt="">
-            </div>
-        </section>
-    </main>
 
-
-
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <script>
-    var typed = new Typed('#element', {
-      strings: ['MLOps', 'System design', 'Cloud deployment', 'web development', 'API development', 'Core AI development'],
-      typeSpeed: 50,
-    });
-  </script>
-
+    <!-- custom js -->
+    <script src="js/script.js"></script>
   </body>
 </html>
