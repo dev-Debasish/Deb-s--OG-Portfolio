@@ -17,7 +17,7 @@
   <body>
    
     <!-- header -->
-    <header>
+    <header class="active">
         <a href="#" class="logo">Debasish.</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
@@ -31,8 +31,18 @@
         </nav>
     </header>
 
+    <!-- bars background -->
+     <div class="bars-box active">
+      <div class="bar" style="--i:6;"></div>
+      <div class="bar" style="--i:5;"></div>
+      <div class="bar" style="--i:4;"></div>
+      <div class="bar" style="--i:3;"></div>
+      <div class="bar" style="--i:2;"></div>
+      <div class="bar" style="--i:1;"></div>
+     </div>
+
     <!-- Home Section -->
-     <section class="home">
+     <section class="home active">
       <div class="home-detail">
         <h1>Debasish Pal</h1>
         <h2>I'm a 
@@ -443,7 +453,7 @@
         </section>
 
         <!-- Contact Section -->
-        <section class="contact active">
+        <section class="contact">
           <div class="contact-container">
             <div class="contact-box">
               <h2>Let's work together</h2>
@@ -465,7 +475,7 @@
               </div>
 
               <div class="contact-detail">
-                <i class='bx bxs-envelope' ></i>
+                <i class='bx bxs-map'></i>
                 <div class="detail">
                   <p>Address</p>
                   <p>Dag No 853A, Dharamtala Panchuria, Hazratala Kalibari Road, behind Karigari Bhawan, Newtown, Polerhat, Kolkata, West Bengal 743502</p>
@@ -476,7 +486,15 @@
 
             <div class="contact-box">
               <form action="">
-
+                <h2 class="heading">Contact <span>Me</span></h2>
+                <div class="field-box">
+                  <input type="text" placeholder="Full Name" required>
+                  <input type="email" placeholder="Email Address" required>
+                  <input type="text" placeholder="Phone Number" required>
+                  <input type="text" placeholder="Email Subject" required>
+                  <textarea name="" id="" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
               </form>
             </div>
           </div>
